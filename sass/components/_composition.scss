@@ -1,0 +1,34 @@
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%; /* Always define width in percentages to make them responsive */
+    box-shadow: 0 1rem 4rem rgba($color-black, 0.4rem);
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 1.5rem; //gives space between the outline and the element
+
+    &--p1 {
+      top: -2rem;
+      left: 0;
+    }
+    &--p2 {
+      right: 0rem;
+      top: 2rem;
+    }
+    &--p3 {
+      top: 10rem;
+      left: 20%;
+    }
+
+    &:hover {
+      outline: 1rem solid $color-primary;
+      transform: scale(1.2);
+      box-shadow: 1rem 2rem 5rem rgba($color-black, 0.6rem);
+      z-index: 20;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.8);
+  }
+}
