@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;
@@ -9,6 +10,9 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -20,7 +24,9 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2); /* shadow in x , shadow in y, blur and last is opacity of the
        shadow */
@@ -32,6 +38,15 @@
 
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 
