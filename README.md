@@ -10,3 +10,5 @@
 - Added the features section
 - Added the popular's section
 - Added the booking form
+
+* **Hosted the site on netlify, access now at https://natours-by-anurag.netlify.app/**
