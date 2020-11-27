@@ -12,3 +12,7 @@
 - Added the booking form
 
 * **Hosted the site on netlify, access now at https://natours-by-anurag.netlify.app/**
+
+27/11/2020
+
+- Added the footer section
