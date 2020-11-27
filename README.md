@@ -16,3 +16,5 @@
 27/11/2020
 
 - Added the footer section
+
+* Added navigation component
